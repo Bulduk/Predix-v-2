@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-base: var(--bg-base);
+  --color-bg-surface: var(--bg-surface);
+  --color-bg-surface-solid: var(--bg-surface-solid);
+  --color-bg-surface-hover: var(--bg-surface-hover);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-border-color: var(--border-color);
+  --color-theme-primary: var(--theme-primary);
+  --color-theme-accent: var(--theme-accent);
+  --color-trade-up: var(--trade-up);
+  --color-trade-down: var(--trade-down);
+}
+
+@layer base {
+  :root, .theme-light {
+    --bg-base: #f8fafc;
+    --bg-surface: rgba(255, 255, 255, 0.7);
+    --bg-surface-solid: #ffffff;
+    --bg-surface-hover: rgba(255, 255, 255, 0.9);
+    --text-primary: #0f172a;
+    --text-secondary: #64748b;
+    --border-color: rgba(15, 23, 42, 0.1);
+    --theme-primary: #8b5cf6;
+    --theme-accent: #06b6d4;
+    --trade-up: #10b981;
+    --trade-down: #ef4444;
+  }
+
+  .theme-dark {
+    --bg-base: #0f172a;
+    --bg-surface: rgba(30, 41, 59, 0.7);
+    --bg-surface-solid: #1e293b;
+    --bg-surface-hover: rgba(30, 41, 59, 0.9);
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --theme-primary: #a855f7;
+    --theme-accent: #22d3ee;
+    --trade-up: #34d399;
+    --trade-down: #f87171;
+  }
+
+  .theme-green {
+    --bg-base: #022c22;
+    --bg-surface: rgba(6, 78, 59, 0.7);
+    --bg-surface-solid: #064e3b;
+    --bg-surface-hover: rgba(6, 78, 59, 0.9);
+    --text-primary: #ecfdf5;
+    --text-secondary: #a7f3d0;
+    --border-color: rgba(236, 253, 245, 0.1);
+    --theme-primary: #10b981;
+    --theme-accent: #34d399;
+    --trade-up: #6ee7b7;
+    --trade-down: #fca5a5;
+  }
+
+  .theme-orange {
+    --bg-base: #431407;
+    --bg-surface: rgba(124, 45, 18, 0.7);
+    --bg-surface-solid: #7c2d12;
+    --bg-surface-hover: rgba(124, 45, 18, 0.9);
+    --text-primary: #fff7ed;
+    --text-secondary: #fed7aa;
+    --border-color: rgba(255, 247, 237, 0.1);
+    --theme-primary: #f97316;
+    --theme-accent: #fb923c;
+    --trade-up: #4ade80;
+    --trade-down: #f87171;
+  }
+}
